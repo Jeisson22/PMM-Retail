@@ -44,5 +44,10 @@ public class ProductManagementModuleApplication implements CommandLineRunner {
 //		poligonoService.calcularArea();
 
 
+		E6_InvirtiendoCadena e6InvirtiendoCadena = new E6_InvirtiendoCadena();
+		e6InvirtiendoCadena.invertir("Hola mundo");
+		e6InvirtiendoCadena.invertir("\n");
+		e6InvirtiendoCadena.invertir("Como estas Amigo, debes estar con frio");
+
 	}
 }
