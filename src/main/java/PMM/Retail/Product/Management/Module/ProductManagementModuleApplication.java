@@ -1,9 +1,7 @@
 package PMM.Retail.Product.Management.Module;
 
-import Model.E1_FizzBuzz;
-import Model.E2_Anagrama;
-import Model.E3_SucesionFibonacci;
-import Model.E4_NumeroPrimo;
+import Model.*;
+import Service.PoligonoService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,15 +22,27 @@ public class ProductManagementModuleApplication implements CommandLineRunner {
 		//boolean resultado = E2_Anagrama.sonAnagramas("Amor","Roma");
 		//System.out.println(resultado);
 
-		E3_SucesionFibonacci generator = new E3_SucesionFibonacci();
-		List<Integer> sucesion = generator.generarSucesionHasta(50);
+//		E3_SucesionFibonacci generator = new E3_SucesionFibonacci();
+//		List<Integer> sucesion = generator.generarSucesionHasta(50);
+//
+//		System.out.println("Sucesión de Fibonacci hasta el límite: " + sucesion);
+//
+//
+//		E4_NumeroPrimo primos = new E4_NumeroPrimo();
+//		List<Integer> listaPrimos = primos.numeroPrimo(1,100);
+//
+//		listaPrimos.forEach(primo -> System.out.println("Número primo: " + primo));
 
-		System.out.println("Sucesión de Fibonacci hasta el límite: " + sucesion);
+//
+//		E5_Poligono e5Poligono = new E5_Poligono();
+//			e5Poligono.calcularPoligono("TRIANGULO");
+//			e5Poligono.calcularPoligono("CUADRADO");
+//			e5Poligono.calcularPoligono("RECTANGULO");
 
 
-		E4_NumeroPrimo primos = new E4_NumeroPrimo();
-		List<Integer> listaPrimos = primos.numeroPrimo(1,100);
+//		PoligonoService poligonoService = new PoligonoService();
+//		poligonoService.calcularArea();
 
-		listaPrimos.forEach(primo -> System.out.println("Número primo: " + primo));
+
 	}
 }
